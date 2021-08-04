@@ -11,6 +11,8 @@ int main(int argc, char *argv[])
         BytesView v;
         QFile file(argv[1]);
         v.process(&file);
+        v.show();
         return a.exec();
     }
+    return -1;
 }
